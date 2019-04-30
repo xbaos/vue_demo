@@ -31,7 +31,7 @@
                         <template v-for="(item, index) in list">
                             <div class="todo-list" v-if="item.status == true">
                                 <span class="item finished">
-                                    {{index}}. {{item.content}}
+                                    {{index + 1}}. {{item.content}}
                                 </span>
                                 <span class="pull-right">
                                     <el-button size="small" type="primary" @click="restore(index)">还原</el-button>
